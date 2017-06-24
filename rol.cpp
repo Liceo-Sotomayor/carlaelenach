@@ -5,20 +5,17 @@
 using namespace std;
 int main() {
     srand (time(NULL));
-    bool esMayor, esIgual;
-    int a, b;
-    a = rand()%4;
-    b = rand()%4;
-    esMayor = a > b; 
-      esIgual = a == b;
-
-    if (esIgual) {
-        cout << a << " Es igual " << b << endl;
-    } else {
+    int arma, escudo, dano;
+    arma = rand()%6+1;
+    arma += rand()%6+1;
+    arma += 3;
+    escudo = rand()%6+1;
+    escudo += rand()%6+1;
+    escudo += 1;
+    dano = arma - escudo;        
     if (esMayor) {
         cout << a << " es mayor " << b << endl;
     } else {
         cout << a << " es menor " << b << endl;
     } 
   }
-}
